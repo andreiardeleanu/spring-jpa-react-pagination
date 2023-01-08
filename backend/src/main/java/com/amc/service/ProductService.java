@@ -2,7 +2,6 @@ package com.amc.service;
 
 import static org.h2.util.StringUtils.isNullOrEmpty;
 
-import com.amc.converter.ProductConverter;
 import com.amc.model.ProductDto;
 import com.amc.repository.ProductRepository;
 import com.amc.util.GenericSpecifications;
@@ -14,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProductService implements ProductConverter, GenericService {
+public class ProductService implements  GenericService {
 
   @Autowired
   private ProductRepository repository;
